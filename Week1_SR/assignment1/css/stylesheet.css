@@ -1,0 +1,154 @@
+body {
+    background-image: url("http://7-themes.com/data_images/out/12/6806990-purple-backgrounds.jpg");
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Cuprum', serif;
+    text-align: center;
+    color: #FFFFCC;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
+h2 {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* 
+I originally had the image on my homepage sit above the 
+text and centered, but since the assignment asked us to
+use floats, I created a new ID just for my profile picture 
+on the homepage and made it float left so the text would sit 
+to its right.
+*/
+
+#homepic {
+    float: left;
+    padding-left: 150px;
+    padding-right: 40px;
+    width: 250px;
+}
+
+img {
+    text-align: center;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+ }
+
+
+ p {
+    color: white;
+    font-family: 'Abel', serif;
+    max-width: 600px;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    clear: none;
+ }
+
+
+/* 
+Used this to turn first letters into drop caps. 
+*/
+ p:first-letter { 
+    float: left; 
+    color: white; 
+    font-size: 55px; 
+    line-height: 60px; 
+    padding-top: 1px; 
+    padding-right: 10px; 
+    padding-left: 3px; 
+    font-family: 'Dancing Script'; 
+}
+
+ span {
+    color: #FFFFCC;
+    font-family: 'Abel', serif;
+    font-size: 16px;
+    max-width: 600px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+ }
+
+ a:link {
+    color: #ccbadc;
+    text-decoration: none;
+ }
+
+ a:hover {
+    color: white;
+ }
+
+ a:visited {
+    color: #ccbadc;
+ }
+
+li {
+    display: inline;
+    text-align: left;
+    font-family: 'Dancing Script'; 
+    font-size: 20px;
+}
+
+
+/* 
+Inserted this pseudo-selector to add my own icons to my nav bar
+*/
+ul li:before {
+    content: "\00BB \0020";
+    color: #FFFFCC;
+    font-size: 0.9em;
+    }
+
+
+nav {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* 
+This is the CSS for my row of 3 images with text underneath
+*/
+div {
+    text-align: center;
+}
+
+div img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div p {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer{
+    color: #ccbadc;
+    font-size: 10px;
+    padding-top: 55px;
+    padding-left: 40px;
+    clear: both;
+}
+
+
+
+
+

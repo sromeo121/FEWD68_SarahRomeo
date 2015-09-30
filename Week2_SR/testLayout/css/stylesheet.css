@@ -1,0 +1,66 @@
+body {
+	background-color: #F1ECFF;
+}
+
+.wrapper {
+	width: 100%;
+	padding-left: 25px;
+
+}
+
+nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	text-align: center;
+	padding-top: 40px;
+}
+
+li {
+	display: inline;
+}
+
+header{
+	background-color: #CBC5F5;
+	position: relative;
+	width: 820px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.main-content {
+	width: 600px;
+	height: 400px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-image: url("http://cookusart.com/images/1/beautiful-view/beautiful-view-01.jpg");
+	background-size: cover;
+
+}
+
+.main-content p {
+	padding-left: 20px;
+	color: white;
+	font-family: 'Playball';
+	font-size: 40px;
+	text-shadow: 2px 2px #800080;
+}
+
+.side-content {
+	width: 200px;
+	height: 400px;
+	background-color: #CBC5F5;
+	float: left;
+	position: static;
+}
+
+footer {
+	width: 820px;
+	background-color: #CBC5F5;
+	padding-top: 10px;
+	clear: both;
+	height: 100px;
+}

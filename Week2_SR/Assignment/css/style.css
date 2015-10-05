@@ -50,7 +50,7 @@ body {
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
-     background-color: #dededf;
+     background-color: #f0efef;
       background-size: cover;
 }
 
@@ -67,14 +67,21 @@ body {
 
 }
 
+#blogcontainer {
+  width: 960px;
+  margin: auto;
+  vertical-align: top;
+}
+
+
 /* HEADER */
 
 header {
   width: 100%;
   background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
   background-size: cover;
-  padding-top: 10px;
-  height: 300px;
+  padding-top: 40px;
+  overflow: hidden;
 }
 
 .logowhite {
@@ -83,16 +90,18 @@ header {
   font-weight: 700;    /* Is this really the best way to pick font weight?*/
   font-size: 24px;    
   margin-left: 40px;
-  margin-top: 30px;
+  float: left;
 }
 
 h1 {
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500; 
-  font-size: 24px;
+  font-size: 29px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
+  clear: both;
+  padding-left: 40px;
 
 }
 
@@ -100,30 +109,31 @@ h1 {
   background-color: #f9e42e;
   margin-left: auto;
   margin-right: auto;
-  width: 125px;
-  height: 25px;
+  width: 135px;
+  height: 30px;
   border-radius: 2px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: #121212;
   text-align: center;
-  padding-top: 2.5px;
+  padding-top: 4px;
   margin-top: 30px;
+  margin-bottom: 180px;
 }
 
 /* BENEFITS BLOCK */
 
 .benefitsblock {
-  background-color: #f0efef;  /*This is the only block with a position that sticks to the left. How do I make this move like the others?*/
-  height: 250px;
+  background-color: #f0efef;  
   padding: 40px;
+  margin: 0 auto;
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 23px;
   color: #121212;
 }
 
@@ -131,15 +141,25 @@ h2 {
   color: #121212;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 15px;
+  margin: 0 auto;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .benefitsblock li {
   color: #121212;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 13px;
-  position: relative;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.benefitscontainer {
+  max-width: 500px;
+  margin: 0 auto;
+
 }
 
 /* QUOTE BLOCK */
@@ -147,7 +167,6 @@ h2 {
 .quoteblock {
   background: url(../images/testimonial_bg.jpg);
   background-size: cover;
-  height: 195px;
   padding-top: 25px;
 }
 
@@ -158,7 +177,7 @@ h2 {
   font-size: 18px;
   color: white;
   text-align: center;
-  max-width: 300px;
+  max-width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -170,29 +189,40 @@ h2 {
   font-size: 17px;
   color: white;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 /* YELLOW BLOCK */
 
 .yellowblock {
-  height: 50px;
   background-color: #f9e42e;
   padding-top: 15px;
+  padding-bottom: 12px;
+  clear: both;
 }
 
 .buttonblue {
   background-color: #033048;
   margin-left: auto;
   margin-right: auto;
-  width: 125px;
-  height: 25px;
+  width: 135px;
+  height: 30px;
   border-radius: 2px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   text-align: center;
-  padding-top: 2px;
+  padding-top: 4px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: #033048;
+  margin-left: auto;
+  margin-right: auto;
+  width: 135px;
+  height: 30px;
 }
 
 /* FOOTER */
@@ -200,7 +230,8 @@ h2 {
 footer {
   background-color: #121212;
   height: 155px;
-  padding-top: 20px
+  padding-top: 20px;
+  clear: both;
 }
 
 .logoyellow {
@@ -236,6 +267,162 @@ footer p {
   color: white;
 }
 
+/* BLOG STYLES*/
+nav {
+  width: 100%;
+  background-color: #033048;
+  vertical-align: top;
+  padding-top: 10px;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+#navlinks {
+  float: right;
+  padding-left: 200px;
+  padding-top: 8px;
+}
+
+#navlinks li {
+ display: inline;
+ color: #f9e42e;
+ font-family: 'Open Sans', sans-serif;
+ font-weight: 600;
+ font-size: 15px;
+ padding: 12px;
+ margin-right: 30px;
+}
+
+#navlinks a {
+  color: #f9e42e;
+ font-family: 'Open Sans', sans-serif;
+ font-weight: 600;
+ font-size: 15px;
+ text-decoration: none;
+}
+
+#navlinks a:hover {
+  color: white;
+}
+
+article {
+  width: 700px;
+  background-color: #f0efef;
+  float: left;
+}
+
+article h1 {
+  color: #033048;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; 
+  font-size: 40px;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-left: 0px;
+
+}
+
+article img {
+  width: 640px;
+  margin-top: 30px;
+  margin-left: 30px; 
+}
+
+article p {
+  width: 640px;
+  margin-top: 23px;
+  margin-left: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300px;
+  font-size: 19.5px;
+  color: #121212;
+}
+
+
+article p:first-letter { 
+    float: left; 
+    color: #121212; 
+    font-size: 55px; 
+    line-height: 50px; 
+    font-weight: 600;
+    padding-top: 1px; 
+    padding-right: 6px; 
+    padding-left: 3px; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+article a {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #121212;
+  padding-bottom: 30px;
+  text-decoration: none;
+}
+
+article a:hover {
+  color: #033048;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #f0efef;
+  float: right;  
+  padding-top: 30px;
+}
+
+.sidebarheader {
+  background-color: #f0efef;
+  background-image: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 27px;
+  color: #033048;
+}
+
+.sidebar ul {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  color: #033048;
+}
+
+.sidebar p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #033048;
+}
+
+.sidebar a {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #121212;
+  padding-bottom: 30px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #033048;
+}
+.sidebar img {
+  margin-top: 45px;
+}
+
+.hr {
+  width: 700px;
+  height: 1px;
+  background: #606161;
+  overflow: hidden;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

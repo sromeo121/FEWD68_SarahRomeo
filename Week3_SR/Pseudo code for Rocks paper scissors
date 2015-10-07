@@ -1,0 +1,30 @@
+Pseudo code for Rocks paper scissors
+
+1. Define variables: Rock = r
+					 Paper = p
+					 Scissors = s
+
+2. Player one (x) goes
+
+3. At the same time, player 2 (y) goes
+
+4. if 
+	x = r && y = s ||
+	x = p && y = r ||
+    x = s && y = p 
+
+    print "Player 1 wins!"
+
+
+5. else if
+	x = r && y = r ||
+	x = p && y = p ||
+	x = s && y = s
+
+	print "It's a tie! Try again!"
+
+6. else
+	
+	print "Player 2 wins!"
+
+7. Repeat steps 1-6

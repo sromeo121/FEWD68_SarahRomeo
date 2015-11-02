@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="TK" content="TK">
+    	<meta name="keywords" content="one, two, three">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Responsive Layout</title>
+		<!-- external links -->
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  
+	
+	</head>
+	
+	<body>
+		<!--TOP ROW WITH NAV MENU-->
+		<div id="topWrapper">
+			<nav>
+				
+				
+				<div class="button">hi hi hi</div>
+				<div class="button">hi hi hi</div>
+				<div class="button">hi hi hi</div>
+				<div class="button">hi hi hi</div>
+				
+			</nav>
+			<button class="hamburger">&#9776;</button>
+  			<button class="cross">&#735;</button>
+
+		<div class="menu">
+  			<ul>
+    			<a href="#"><li>LINK ONE</li></a>
+    			<a href="#"><li>LINK TWO</li></a>
+    			<a href="#"><li>LINK THREE</li></a>
+    			<a href="#"><li>LINK FOUR</li></a>
+    			<a href="#"><li>LINK FIVE</li></a>
+  			</ul>
+		</div> 
+	</div>
+
+			</nav>
+
+			<!--RED MAIN CONTENT-->
+		<div id="main">
+			<h1>Mixtape freegan single-origin coffee four loko, post</h1>
+		</div>
+
+			<!--GREEN SECONDARY CONTENT-->
+			<div id="asides">
+				<aside>Mixtape freegan single-origin coffee four loko, post-ironic artisan fixie authentic.</aside>
+				<aside>Mixtape freegan single-origin coffee four loko, post-ironic artisan fixie authentic.</aside>
+				<aside>Mixtape freegan single-origin coffee four loko, post-ironic artisan fixie authentic.</aside>
+				<aside>Mixtape freegan single-origin coffee four loko, post-ironic artisan fixie authentic.</aside>
+			</div>
+
+			<!--BLUE FINAL CONTENT-->
+			<footer>
+				<section>Mixtape freegan single-origin coffee four loko, post-ironic artisan fixie authentic.</section>
+				<section>Mixtape freegan single-origin coffee four loko, post-ironic artisan fixie authentic.</section>
+				<section>Mixtape freegan single-origin coffee four loko, post-ironic artisan fixie authentic.</section>
+			</footer>
+	<script>
+		$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+	</script>
+	</body>
+</html>

@@ -1,0 +1,237 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
+@media (min-width: 250px) and (max-width: 450px) {
+ 
+body{
+    max-width: 450px;
+  }
+
+#tabletDeskLinks {
+	display: none;
+}
+
+.button {
+	display: none;
+}
+
+#topWrapper {
+	border: 1px solid black;
+	clear: both;
+	overflow: hidden;
+	padding-bottom: 50px;
+	width: 99%;
+	padding-right: 5px;
+}
+
+/* hamburger menu begin */
+
+header{
+	width:99%; 
+	background: white; 
+	height:50px; 
+	line-height:50px;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color: black;
+  border: 0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color: black;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#131313;  position:absolute; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+/* hamburger menu end */
+
+#main {
+	border: 1px solid red;
+	float: left;
+	width: 99%;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}
+
+h1 {
+	color: white;
+}
+
+
+aside {
+	display: block;
+	width: 99%;
+	border: 1px solid green;
+	color: white;
+	float: left;
+	margin-bottom: 5px;	
+}
+
+footer {
+	display: block;
+	width: 99%;
+	border: 1px solid blue;
+	color: white;
+	float: left;
+	padding-top: 5px;
+	padding-left: 5px;	
+}
+
+section {
+	display: block;
+	width: 99%;
+	border: 1px solid blue;
+	color: white;
+	float: left;
+	margin-bottom: 5px;
+}
+} /*end of mobile*/
+
+/* TABLET TABLET TABLET TABLET */
+@media (min-width: 451px) and (max-width: 768px) {
+
+#tabletDeskLinks {
+	display: inline-block;
+}
+
+#topWrapper {
+	border: 1px solid black;
+	clear: both;
+	overflow: hidden;
+	padding-bottom: 50px;
+	width: 99%;
+	padding-right: 5px;
+	padding-top: 10px;
+}
+
+.hamburger {
+	display: none;
+}
+
+.cross {
+	display: none;
+}
+
+.menu {
+	display: none;
+}
+
+ul{
+	float: left;
+}
+
+li {
+	display: inline-block;
+	border: 1px solid black;
+}
+
+.button {
+	border: 1px solid black;
+	margin-top: 4px;
+	margin-left: 4px;
+	padding: 20px;
+	width: 20%;
+	display: inline;
+	float: left;
+}
+
+#main {
+	border: 1px solid red;
+	float: left;
+	width: 99%;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}
+
+h1 {
+	color: white;
+	font-size: 60px;
+}
+
+#asides {
+	width: 99%;
+}
+
+aside {
+	width: 22%;
+	border: 1px solid green;
+	color: white;
+	float: left;
+	margin-left: auto; 
+    margin-right: auto;
+    display: inline-block;
+}
+
+footer {
+	clear: both;
+}
+
+}
+

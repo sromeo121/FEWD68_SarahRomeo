@@ -1,0 +1,345 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	cursor: default;
+}
+
+.wrapper {
+	max-width: 1280px;
+	margin: auto;
+}
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+h1 {
+	font-size: 2em;
+	line-height: 1;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+h3 {
+	font-family: 'Merriweather', serif;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+p {
+	margin: 0 0 1.5em 0;
+}
+nav .line{
+	width: 2em;
+	height: .2em;
+	background: yellow;
+	border-radius: 1em;
+	margin-top: .3em;
+}
+nav .line:first-of-type{
+	margin-top:1.1em;
+}
+.button {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background: yellow;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 12px;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+	border-radius: 5px;
+}
+
+#page-header {
+	background: black;
+	color: white;
+	overflow: hidden;
+	border-bottom: 4px solid yellow;
+	padding: 0 3%;
+}
+#page-header a {
+	color: inherit;
+	text-decoration: none;
+}
+#page-header h1 {
+	float: left;
+	color: yellow;
+	font-family: 'Merriweather', serif;
+	font-size: 1.5em;
+	margin: 20px 0 0 0;
+}
+#page-header nav {
+	float: right;
+}
+#page-header nav li {
+	float: left;
+}
+#page-header nav li:first-child{
+	float:right;
+	display: none;
+	cursor: pointer;
+}
+#page-header nav a {
+	display: block;
+	padding: 20px 10px;
+}
+#page-header nav li a:hover {
+	color: yellow;
+}
+#page-header nav strong {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+#page-header nav strong a {
+}
+
+
+.tagline {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	margin: 0;
+	padding: 1em 3%;
+	font-size: 1.25em;
+	line-height: 1em;
+	font-style: italic;
+	background: #C6C6C6;
+	border-top: 1px solid #AAA;
+}
+.tagline del {
+	color: #999;
+}
+.tagline ins {
+	text-decoration: none;
+	border-bottom: 3px solid yellow;
+}
+
+.banner {
+	background: url(../images/coworking.jpg) center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	padding: 3%;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+}
+
+.blurb {
+	background: rgba(255,255,255,.8);
+	width: 34%;
+	margin: 0 auto;
+	padding: 4%;
+	float: right;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	transition: width 500ms;
+}
+.blurb > p:first-of-type{
+	margin-bottom:0;
+}
+.touts {
+	background: #EEE;
+	background: white;
+	overflow: hidden;
+	padding: 2% 0;
+}
+.tout {
+	float: left;
+	width: 27.3333%;
+	padding: 2% 3%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
+.tout:last-child {
+	box-shadow: none;
+}
+.tout .button {
+	background: #C6C6C6;
+}
+
+footer {
+	background: black;
+	color: white;
+	padding: 2% 3%;
+}
+
+/* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
+@media (min-width: 250px) and (max-width: 500px) {
+
+#desktopTablet {
+	display: none;
+}
+
+#page-header{
+	padding-bottom: 10px; 
+}
+
+.tagline {
+	padding: 1em 3%;
+	font-size: .9em;
+	line-height: 1em;
+	font-style: italic;
+	background: #C6C6C6;
+	border-top: 1px solid #AAA;
+}
+
+.banner {
+	background-size: cover;
+	
+}
+
+.blurb {
+	background: rgba(255,255,255,.8);
+	width: 50%;
+	margin: 0 auto;
+	padding: 4%;
+	float: right;
+	box-shadow: 0 0 5px rgba(0,0,0,.75);
+	transition: width 500ms;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+.blurb > p {
+	font-size: .7em;
+}
+
+.button {
+	font-size: .7em;
+	padding: 11px;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+.tout {
+	float: none;
+	width: 100%;
+}
+
+.tout p {
+	font-size: .9em;
+	width: 95%
+}
+
+.tout .button{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: -15px;
+}
+
+footer{
+	font-size: .7em;
+}
+
+
+}
+
+
+/* TABLET TABLET TABLET TABLET TABLET TABLET */
+@media (min-width: 501px) and (max-width: 850px) {
+
+.line {
+	display: none;
+}
+
+#desktopTablet {
+	font-size: .74em;
+
+}
+
+.tagline{
+	font-size: 1.1em;
+}
+
+h2 {
+	font-size: 1.1em;
+}
+
+.blurb > p {
+	font-size: .8em;
+}
+
+.button {
+	font-size: .8em;
+	padding: 11px;
+}
+
+}
+
+@media (min-width: 501px) and (max-width: 740px) {
+
+h3 {
+	font-size: 1em;
+}
+
+.tout {
+	float: none;
+	width: 100%;
+}
+
+.tout p {
+	font-size: .9em;
+	width: 95%
+}
+
+.tout .button{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: -15px;
+}
+}
+
+@media (min-width: 741px) and (max-width: 850px) {
+
+h3 {
+	font-size: 1em;
+}
+
+.touts {
+	background: #EEE;
+	background: white;
+	overflow: hidden;
+	padding: 2% 0;
+}
+.tout {
+	float: left;
+	width: 27.3333%;
+	padding: 2% 3%;
+	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+}
+
+.tout p{
+	font-size: .85em;
+}
+
+.tout:last-child {
+	box-shadow: none;
+}
+.tout .button {
+	background: #C6C6C6;
+	font-size: .8em;
+}
+
+}
+
+@media (min-width: 840px) {
+
+	.line{
+		display: none;
+	}
+
+	nav {
+		color: blue;
+	}
+}

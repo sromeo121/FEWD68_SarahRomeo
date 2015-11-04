@@ -318,7 +318,7 @@ footer p {
 @media (min-width: 650px) and (max-width: 980px) {
 
 header nav {
-  float: left;
+  float: left; /* nav bar snaps to left on tablet*/
   margin-bottom: -9px;
   margin-right: -7px;
 
